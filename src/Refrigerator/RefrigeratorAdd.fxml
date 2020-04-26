@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Refrigerator.RefrigeratorAddController">
+   <children>
+      <AnchorPane fx:id="pane" prefHeight="900.0" prefWidth="600.0" style="-fx-background-color: FFE5CC;">
+         <children>
+            <TextField fx:id="nameTf" layoutX="104.0" layoutY="73.0" prefHeight="31.0" prefWidth="382.0" promptText="ชื่ออาหาร" />
+            <TextField fx:id="typeTf" layoutX="104.0" layoutY="134.0" prefHeight="31.0" prefWidth="382.0" promptText="ประเภทอาหาร" />
+            <TextField fx:id="unitTf" layoutX="101.0" layoutY="194.0" prefHeight="31.0" prefWidth="382.0" promptText="หน่วยของปริมาตรอาหาร" />
+            <CheckBox fx:id="frezzOnlyCheck" layoutX="380.0" layoutY="383.0" mnemonicParsing="false" onAction="#freezeOnly" text="แช่แข็งเท่านั้น" />
+            <Label layoutX="32.0" layoutY="78.0" text="ชื่อ            :" />
+            <Label layoutX="32.0" layoutY="139.0" text="ประเภท      :" />
+            <Label layoutX="22.0" layoutY="199.0" prefHeight="21.0" prefWidth="80.0" text="หน่วย          :" />
+            <Label layoutX="21.0" layoutY="263.0" prefHeight="21.0" prefWidth="80.0" text="วันหมดอายุ  :" />
+            <TextField editable="false" layoutX="187.0" layoutY="479.0" prefHeight="46.0" prefWidth="233.0" style="-fx-background-color: CCFFCC;" />
+            <Label layoutX="228.0" layoutY="485.0" prefHeight="34.0" prefWidth="145.0" text="ช่องที่ต้องการแช่">
+               <font>
+                  <Font size="23.0" />
+               </font></Label>
+            <TextField fx:id="quantityTf" layoutX="101.0" layoutY="320.0" prefHeight="31.0" prefWidth="382.0" promptText="จำนวน" />
+            <Label layoutX="17.0" layoutY="325.0" prefHeight="21.0" prefWidth="80.0" text="จำนวน         :" />
+            <TextField editable="false" layoutX="183.0" layoutY="520.0" prefHeight="348.0" prefWidth="233.0" style="-fx-background-color: CCCCFF;" />
+            <Button layoutX="208.0" layoutY="560.0" mnemonicParsing="false" onAction="#addBtn1" prefHeight="67.0" prefWidth="91.0" text="ช่องที่ 1" />
+            <Button layoutX="299.0" layoutY="560.0" mnemonicParsing="false" onAction="#addBtn2" prefHeight="67.0" prefWidth="91.0" text="ช่องที่ 2" />
+            <Button layoutX="208.0" layoutY="627.0" mnemonicParsing="false" onAction="#addBtn3" prefHeight="67.0" prefWidth="91.0" text="ช่องที่ 3" />
+            <Button layoutX="208.0" layoutY="694.0" mnemonicParsing="false" onAction="#addBtn5" prefHeight="67.0" prefWidth="91.0" text="ช่องที่ 5" />
+            <Button layoutX="299.0" layoutY="627.0" mnemonicParsing="false" onAction="#addBtn4" prefHeight="67.0" prefWidth="91.0" text="ช่องที่ 4" />
+            <Button layoutX="299.0" layoutY="694.0" mnemonicParsing="false" onAction="#addBtn6" prefHeight="67.0" prefWidth="91.0" text="ช่องที่ 6" />
+            <Button layoutX="208.0" layoutY="798.0" mnemonicParsing="false" onAction="#addBtn7" prefHeight="67.0" prefWidth="91.0" text="ช่องที่ 7" />
+            <Button layoutX="299.0" layoutY="798.0" mnemonicParsing="false" onAction="#addBtn8" prefHeight="67.0" prefWidth="91.0" text="ช่องที่ 8" />
+            <TextField fx:id="exdDTf" layoutX="101.0" layoutY="258.0" prefHeight="31.0" prefWidth="104.0" promptText="วัน" />
+            <TextField fx:id="exdMTf" layoutX="231.0" layoutY="258.0" prefHeight="31.0" prefWidth="104.0" promptText="เดือน" />
+            <TextField fx:id="exdYTF" layoutX="370.0" layoutY="258.0" prefHeight="31.0" prefWidth="104.0" promptText="ปี" />
+            <Label layoutX="221.0" layoutY="258.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="360.0" layoutY="257.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="243.0" layoutY="520.0" prefHeight="34.0" prefWidth="115.0" text="ช่องแช่ธรรมดา">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="260.0" layoutY="761.0" prefHeight="34.0" prefWidth="80.0" text="ช่องแช่แข็ง">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button layoutX="-2.0" layoutY="-3.0" mnemonicParsing="false" onAction="#saveAndCloseBtn" prefHeight="31.0" prefWidth="600.0" text="บันทึกและปิดโปรแกรม" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="0.0" prefWidth="579.0" GridPane.rowIndex="1">
+         <children>
+            <Button mnemonicParsing="false" onAction="#backBtn" prefHeight="31.0" prefWidth="600.0" text="ย้อนกลับ" />
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

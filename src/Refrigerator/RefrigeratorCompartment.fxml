@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Refrigerator.RefrigeratorCompartmentController">
+    <children>
+        <AnchorPane fx:id="pane" prefHeight="900.0" prefWidth="600.0" style="-fx-background-color: CCCCFF;" GridPane.rowIndex="1">
+         <children>
+            <Separator layoutX="5.0" layoutY="231.0" prefHeight="3.0" prefWidth="610.0" />
+            <Separator layoutY="665.0" prefHeight="3.0" prefWidth="610.0" />
+            <Separator layoutX="302.0" orientation="VERTICAL" prefHeight="900.0" prefWidth="2.0" />
+            <Separator layoutX="5.0" layoutY="449.0" prefHeight="3.0" prefWidth="610.0" />
+            <TextField fx:id="nameTf1" editable="false" layoutX="114.0" layoutY="84.0" prefHeight="31.0" prefWidth="166.0" promptText="ชื่ออาหาร" />
+            <TextField fx:id="quantityTf1" editable="false" layoutX="114.0" layoutY="115.0" prefHeight="31.0" prefWidth="98.0" promptText="จำนวนอาหาร" />
+            <TextField fx:id="exdDTf1" editable="false" layoutX="114.0" layoutY="146.0" prefHeight="31.0" prefWidth="47.0" promptText="วัน" />
+            <TextField fx:id="exdMTf1" editable="false" layoutX="170.0" layoutY="146.0" prefHeight="31.0" prefWidth="47.0" promptText="เดือน" />
+            <TextField fx:id="exdYTF1" editable="false" layoutX="225.0" layoutY="145.0" prefHeight="31.0" prefWidth="55.0" promptText="ปี" />
+            <Label layoutX="161.0" layoutY="145.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="217.0" layoutY="145.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="147.0" prefHeight="31.0" prefWidth="98.0" text="วันหมดอายุ :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="115.0" prefHeight="31.0" prefWidth="98.0" text="จำนวน       :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="83.0" prefHeight="31.0" prefWidth="98.0" text="ชื่อ            :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="124.0" layoutY="36.0" prefHeight="31.0" prefWidth="62.0" text="ช่องที่ 1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="unitTf1" editable="false" layoutX="211.0" layoutY="115.0" prefHeight="31.0" prefWidth="69.0" promptText="หน่วย" />
+            <Label layoutX="429.0" layoutY="36.0" prefHeight="31.0" prefWidth="62.0" text="ช่องที่ 2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="316.0" layoutY="84.0" prefHeight="31.0" prefWidth="98.0" text="ชื่อ            :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTf2" editable="false" layoutX="414.0" layoutY="83.0" prefHeight="31.0" prefWidth="166.0" promptText="ชื่ออาหาร" />
+            <Label layoutX="316.0" layoutY="115.0" prefHeight="31.0" prefWidth="98.0" text="จำนวน       :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quantityTf2" editable="false" layoutX="414.0" layoutY="115.0" prefHeight="31.0" prefWidth="98.0" promptText="จำนวนอาหาร" />
+            <TextField fx:id="unitTf2" editable="false" layoutX="512.0" layoutY="115.0" prefHeight="31.0" prefWidth="69.0" promptText="หน่วย" />
+            <Label layoutX="316.0" layoutY="147.0" prefHeight="31.0" prefWidth="98.0" text="วันหมดอายุ :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdDTf2" editable="false" layoutX="414.0" layoutY="145.0" prefHeight="31.0" prefWidth="47.0" promptText="วัน" />
+            <Label layoutX="461.0" layoutY="145.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdMTf2" editable="false" layoutX="470.0" layoutY="146.0" prefHeight="31.0" prefWidth="47.0" promptText="เดือน" />
+            <Label layoutX="519.0" layoutY="145.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdYTF2" editable="false" layoutX="526.0" layoutY="147.0" prefHeight="31.0" prefWidth="55.0" promptText="ปี" />
+            <Label layoutX="124.0" layoutY="250.0" prefHeight="31.0" prefWidth="62.0" text="ช่องที่ 3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="303.0" prefHeight="31.0" prefWidth="98.0" text="ชื่อ            :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTf3" editable="false" layoutX="114.0" layoutY="303.0" prefHeight="31.0" prefWidth="166.0" promptText="ชื่ออาหาร" />
+            <Label layoutX="14.0" layoutY="334.0" prefHeight="31.0" prefWidth="98.0" text="จำนวน       :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quantityTf3" editable="false" layoutX="114.0" layoutY="334.0" prefHeight="31.0" prefWidth="98.0" promptText="จำนวนอาหาร" />
+            <TextField fx:id="unitTf3" editable="false" layoutX="211.0" layoutY="334.0" prefHeight="31.0" prefWidth="69.0" promptText="หน่วย" />
+            <Label layoutX="14.0" layoutY="365.0" prefHeight="31.0" prefWidth="98.0" text="วันหมดอายุ :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdDTf3" editable="false" layoutX="114.0" layoutY="365.0" prefHeight="31.0" prefWidth="47.0" promptText="วัน" />
+            <Label layoutX="162.0" layoutY="365.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdMTf3" editable="false" layoutX="169.0" layoutY="365.0" prefHeight="31.0" prefWidth="47.0" promptText="เดือน" />
+            <Label layoutX="216.0" layoutY="364.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdYTF3" editable="false" layoutX="225.0" layoutY="365.0" prefHeight="31.0" prefWidth="55.0" promptText="ปี" />
+            <Label layoutX="429.0" layoutY="250.0" prefHeight="31.0" prefWidth="62.0" text="ช่องที่ 4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="316.0" layoutY="305.0" prefHeight="31.0" prefWidth="98.0" text="ชื่อ            :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTf4" editable="false" layoutX="411.0" layoutY="305.0" prefHeight="31.0" prefWidth="166.0" promptText="ชื่ออาหาร" />
+            <Label layoutX="314.0" layoutY="336.0" prefHeight="31.0" prefWidth="98.0" text="จำนวน       :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quantityTf4" editable="false" layoutX="412.0" layoutY="336.0" prefHeight="31.0" prefWidth="98.0" promptText="จำนวนอาหาร" />
+            <TextField fx:id="unitTf4" editable="false" layoutX="510.0" layoutY="336.0" prefHeight="31.0" prefWidth="69.0" promptText="หน่วย" />
+            <Label layoutX="314.0" layoutY="365.0" prefHeight="31.0" prefWidth="98.0" text="วันหมดอายุ :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdDTf4" editable="false" layoutX="413.0" layoutY="366.0" prefHeight="31.0" prefWidth="47.0" promptText="วัน" />
+            <Label layoutX="461.0" layoutY="366.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdMTf4" editable="false" layoutX="469.0" layoutY="366.0" prefHeight="31.0" prefWidth="47.0" promptText="เดือน" />
+            <Label layoutX="517.0" layoutY="365.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdYTF4" editable="false" layoutX="524.0" layoutY="367.0" prefHeight="31.0" prefWidth="55.0" promptText="ปี" />
+            <Label layoutX="124.0" layoutY="476.0" prefHeight="31.0" prefWidth="62.0" text="ช่องที่ 5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="523.0" prefHeight="31.0" prefWidth="98.0" text="ชื่อ            :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTf5" editable="false" layoutX="114.0" layoutY="523.0" prefHeight="31.0" prefWidth="166.0" promptText="ชื่ออาหาร" />
+            <Label layoutX="14.0" layoutY="554.0" prefHeight="31.0" prefWidth="98.0" text="จำนวน       :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quantityTf5" editable="false" layoutX="114.0" layoutY="554.0" prefHeight="31.0" prefWidth="98.0" promptText="จำนวนอาหาร" />
+            <TextField fx:id="unitTf5" editable="false" layoutX="211.0" layoutY="554.0" prefHeight="31.0" prefWidth="69.0" promptText="หน่วย" />
+            <Label layoutX="13.0" layoutY="585.0" prefHeight="31.0" prefWidth="98.0" text="วันหมดอายุ :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdDTf5" editable="false" layoutX="114.0" layoutY="585.0" prefHeight="31.0" prefWidth="47.0" promptText="วัน" />
+            <Label layoutX="162.0" layoutY="585.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdMTf5" editable="false" layoutX="170.0" layoutY="585.0" prefHeight="31.0" prefWidth="47.0" promptText="เดือน" />
+            <Label layoutX="217.0" layoutY="585.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdYTF5" editable="false" layoutX="225.0" layoutY="585.0" prefHeight="31.0" prefWidth="55.0" promptText="ปี" />
+            <Label layoutX="429.0" layoutY="476.0" prefHeight="31.0" prefWidth="62.0" text="ช่องที่ 6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="316.0" layoutY="523.0" prefHeight="31.0" prefWidth="98.0" text="ชื่อ            :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="314.0" layoutY="554.0" prefHeight="31.0" prefWidth="98.0" text="จำนวน       :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="314.0" layoutY="585.0" prefHeight="31.0" prefWidth="98.0" text="วันหมดอายุ :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTf6" editable="false" layoutX="414.0" layoutY="523.0" prefHeight="31.0" prefWidth="166.0" promptText="ชื่ออาหาร" />
+            <TextField fx:id="quantityTf6" editable="false" layoutX="414.0" layoutY="554.0" prefHeight="31.0" prefWidth="98.0" promptText="จำนวนอาหาร" />
+            <TextField fx:id="unitTf6" editable="false" layoutX="512.0" layoutY="554.0" prefHeight="31.0" prefWidth="69.0" promptText="หน่วย" />
+            <TextField fx:id="exdDTf6" editable="false" layoutX="414.0" layoutY="585.0" prefHeight="31.0" prefWidth="47.0" promptText="วัน" />
+            <Label layoutY="668.0" prefHeight="228.0" prefWidth="300.0" style="-fx-background-color: #9ED0E9;" />
+            <Label layoutX="461.0" layoutY="585.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdMTf6" editable="false" layoutX="469.0" layoutY="585.0" prefHeight="31.0" prefWidth="47.0" promptText="เดือน" />
+            <Label layoutX="517.0" layoutY="585.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdYTF6" editable="false" layoutX="526.0" layoutY="585.0" prefHeight="31.0" prefWidth="55.0" promptText="ปี" />
+            <Label layoutX="98.0" layoutY="694.0" prefHeight="31.0" prefWidth="115.0" text="ช่องแช่แข็งที่ 1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="307.0" layoutY="668.0" prefHeight="228.0" prefWidth="307.0" style="-fx-background-color: #9ED0E9;" />
+            <Label layoutX="16.0" layoutY="738.0" prefHeight="31.0" prefWidth="98.0" text="ชื่อ            :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTf7" editable="false" layoutX="114.0" layoutY="738.0" prefHeight="31.0" prefWidth="166.0" promptText="ชื่ออาหาร" />
+            <Label layoutX="14.0" layoutY="767.0" prefHeight="31.0" prefWidth="98.0" text="จำนวน       :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quantityTf7" editable="false" layoutX="114.0" layoutY="767.0" prefHeight="31.0" prefWidth="98.0" promptText="จำนวนอาหาร" />
+            <TextField fx:id="unitTf7" editable="false" layoutX="211.0" layoutY="767.0" prefHeight="31.0" prefWidth="69.0" promptText="หน่วย" />
+            <Label layoutX="13.0" layoutY="798.0" prefHeight="31.0" prefWidth="98.0" text="วันหมดอายุ :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdDTf7" editable="false" layoutX="114.0" layoutY="798.0" prefHeight="31.0" prefWidth="47.0" promptText="วัน" />
+            <Label layoutX="161.0" layoutY="798.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdMTf7" editable="false" layoutX="169.0" layoutY="798.0" prefHeight="31.0" prefWidth="47.0" promptText="เดือน" />
+            <Label layoutX="217.0" layoutY="798.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdYTF7" editable="false" layoutX="225.0" layoutY="798.0" prefHeight="31.0" prefWidth="55.0" promptText="ปี" />
+            <Label layoutX="403.0" layoutY="694.0" prefHeight="31.0" prefWidth="115.0" text="ช่องแช่แข็งที่ 2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="316.0" layoutY="738.0" prefHeight="31.0" prefWidth="98.0" text="ชื่อ            :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTf8" editable="false" layoutX="414.0" layoutY="738.0" prefHeight="31.0" prefWidth="166.0" promptText="ชื่ออาหาร" />
+            <Label layoutX="314.0" layoutY="767.0" prefHeight="31.0" prefWidth="98.0" text="จำนวน       :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quantityTf8" editable="false" layoutX="414.0" layoutY="767.0" prefHeight="31.0" prefWidth="98.0" promptText="จำนวนอาหาร" />
+            <TextField fx:id="unitTf8" editable="false" layoutX="512.0" layoutY="767.0" prefHeight="31.0" prefWidth="69.0" promptText="หน่วย" />
+            <Label layoutX="314.0" layoutY="798.0" prefHeight="31.0" prefWidth="98.0" text="วันหมดอายุ :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdDTf8" editable="false" layoutX="414.0" layoutY="798.0" prefHeight="31.0" prefWidth="47.0" promptText="วัน" />
+            <Label layoutX="461.0" layoutY="798.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdMTf8" editable="false" layoutX="471.0" layoutY="798.0" prefHeight="31.0" prefWidth="47.0" promptText="เดือน" />
+            <Label layoutX="518.0" layoutY="798.0" prefHeight="31.0" prefWidth="6.0" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exdYTF8" editable="false" layoutX="526.0" layoutY="798.0" prefHeight="31.0" prefWidth="55.0" promptText="ปี" />
+            <TextField fx:id="pickOutTf1" layoutX="13.0" layoutY="193.0" prefHeight="31.0" prefWidth="166.0" promptText="จำนวนที่ต้องการนำออก" />
+            <Button layoutX="180.0" layoutY="193.0" mnemonicParsing="false" onAction="#pickOutBtn1" prefHeight="31.0" prefWidth="98.0" text="นำออก" />
+            <TextField fx:id="pickOutTf2" layoutX="316.0" layoutY="193.0" prefHeight="31.0" prefWidth="166.0" promptText="จำนวนที่ต้องการนำออก" />
+            <Button layoutX="482.0" layoutY="193.0" mnemonicParsing="false" onAction="#pickOutBtn2" prefHeight="31.0" prefWidth="98.0" text="นำออก" />
+            <TextField fx:id="pickOutTf3" layoutX="15.0" layoutY="407.0" prefHeight="31.0" prefWidth="166.0" promptText="จำนวนที่ต้องการนำออก" />
+            <Button layoutX="182.0" layoutY="407.0" mnemonicParsing="false" onAction="#pickOutBtn3" prefHeight="31.0" prefWidth="98.0" text="นำออก" />
+            <TextField fx:id="pickOutTf6" layoutX="315.0" layoutY="623.0" prefHeight="31.0" prefWidth="166.0" promptText="จำนวนที่ต้องการนำออก" />
+            <TextField fx:id="pickOutTf7" layoutX="15.0" layoutY="848.0" prefHeight="31.0" prefWidth="166.0" promptText="จำนวนที่ต้องการนำออก" />
+            <TextField fx:id="pickOutTf5" layoutX="13.0" layoutY="623.0" prefHeight="31.0" prefWidth="166.0" promptText="จำนวนที่ต้องการนำออก" />
+            <TextField fx:id="pickOutTf4" layoutX="314.0" layoutY="407.0" prefHeight="31.0" prefWidth="166.0" promptText="จำนวนที่ต้องการนำออก" />
+            <TextField fx:id="pickOutTf8" layoutX="315.0" layoutY="848.0" prefHeight="31.0" prefWidth="166.0" promptText="จำนวนที่ต้องการนำออก" />
+            <Button layoutX="182.0" layoutY="848.0" mnemonicParsing="false" onAction="#pickOutBtn7" prefHeight="31.0" prefWidth="98.0" text="นำออก" />
+            <Button layoutX="482.0" layoutY="848.0" mnemonicParsing="false" onAction="#pickOutBtn8" prefHeight="31.0" prefWidth="98.0" text="นำออก" />
+            <Button layoutX="482.0" layoutY="623.0" mnemonicParsing="false" onAction="#pickOutBtn6" prefHeight="31.0" prefWidth="98.0" text="นำออก" />
+            <Button layoutX="182.0" layoutY="623.0" mnemonicParsing="false" onAction="#pickOutBtn5" prefHeight="31.0" prefWidth="98.0" text="นำออก" />
+            <Button layoutX="482.0" layoutY="407.0" mnemonicParsing="false" onAction="#pickOutBtn4" prefHeight="31.0" prefWidth="98.0" text="นำออก" />
+            <Button layoutY="-1.0" mnemonicParsing="false" onAction="#saveAndCloseBtn" prefHeight="31.0" prefWidth="615.0" text="บันทึกและปิดโปรแกรม" />
+         </children></AnchorPane>
+      <AnchorPane prefHeight="0.0" prefWidth="615.0" GridPane.rowIndex="3">
+         <children>
+            <Button layoutY="-1.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="31.0" prefWidth="202.0" text="ย้อนกลับ" />
+            <Button layoutX="401.0" layoutY="-1.0" mnemonicParsing="false" onAction="#addBtn" prefHeight="31.0" prefWidth="213.0" text="นำอาหารใส่ช่องแช่" />
+            <Button layoutX="202.0" layoutY="-1.0" mnemonicParsing="false" onAction="#reBtn" prefHeight="31.0" prefWidth="202.0" text="โหลดซ้ำ" />
+         </children>
+      </AnchorPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+</GridPane>

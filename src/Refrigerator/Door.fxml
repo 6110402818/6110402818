@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Refrigerator.DoorController">
+    <children>
+        <AnchorPane prefHeight="900.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="900.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Door.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="538.0" layoutY="305.0" mnemonicParsing="false" onAction="#openBtn" prefHeight="163.0" prefWidth="39.0" />
+            <Button layoutX="457.0" layoutY="900.0" mnemonicParsing="false" onAction="#creditBtn" prefHeight="40.0" prefWidth="142.0" text="Credit" />
+            <Button layoutY="900.0" mnemonicParsing="false" onAction="#saveAndCloseBtn" prefHeight="40.0" prefWidth="459.0" text="บันทึกและปิดโปรแกรม" />
+         </children></AnchorPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
